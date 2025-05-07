@@ -2,7 +2,7 @@
 using namespace std;
 
 int element[10];
-int npanjang;
+int nPanjang;
 int x;
 
 void input() {
@@ -15,3 +15,10 @@ void input() {
             cout << "\n[!] Jumlah elemen tidak boleh lebih dari 10. Silakan coba lagi.\n";
         }
     }
+    cout << "\n=========================================\n";
+    cout << "Data ke-";
+    for (int i = 0; i < nPanjang; i++) {
+        cout << (i + 1) << " = ";
+        cin >> element[i];
+    }
+}
